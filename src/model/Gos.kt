@@ -1,14 +1,14 @@
 package model
 
 class Gos {
-    var nom: String
-    var especie: String
-    var xip: Int
-    var pes: Float
-    var color: String
-    var teRabia: Boolean
-    var mossega: Boolean
-    var cadells: MutableList<Gos>
+    private var nom: String
+    private var especie: String
+    private var xip: Int
+    private var pes: Float
+    private var color: String
+    private var teRabia: Boolean
+    private var mossega: Boolean
+    private var cadells: MutableList<Gos>
 
     /**
      * Constructor específic pel qual es necessita el nom del Gos

@@ -2,7 +2,7 @@ package model
 
 class Gos {
     private var nom: String
-    private var especie: String
+    private val especie: String
     private var xip: Int
     private var pes: Float
     private var color: String
@@ -53,8 +53,25 @@ class Gos {
         this.cadells = mutableListOf()
     }
 
-    fun afegirCadell(gos: Gos){
+    public fun afegirCadell(gos: Gos){
         this.cadells.add(gos)
+    }
+
+    public fun getCadells(): MutableList<Gos>{
+        return this.cadells
+    }
+
+    public fun getXip(): Int{
+        return this.xip
+    }
+
+    public fun setXip(xip: Int): Boolean{
+        if (xip > 0 && xip < 9999) {
+            this.xip = xip
+            return true
+        }else{
+            return false
+        }
     }
 
     @Override

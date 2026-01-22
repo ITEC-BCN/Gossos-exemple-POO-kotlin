@@ -13,8 +13,21 @@ fun main() {
 
     println(milu)
 
-    for (gos in milu.cadells) {
+    for (gos in milu.getCadells()) {
         println(gos)
     }
+
+    println(milu.getXip())
+    var xipNou: Int = readln().toInt()
+
+    var xipCanviat: Boolean = milu.setXip(xipNou)
+
+    if (xipCanviat) {
+        println("Hem canviat el xip correctament")
+    }else{
+        println("Numero de xip erroni")
+    }
+
+    println(milu.getXip())
 
 }
